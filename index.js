@@ -12,4 +12,6 @@ form.addEventListener('submit', function(event) {
     window.localStorage.setItem('user', json);
 
     console.log(json);
+
+    window.location = 'quiz.html';
 });
