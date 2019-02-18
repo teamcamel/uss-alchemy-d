@@ -8,10 +8,10 @@ form.addEventListener('submit', function(event) {
     const user = {
         name: formData.get('name')
     };
+
     const json = JSON.stringify(user);
     window.localStorage.setItem('user', json);
 
-    console.log(json);
 
     window.location = 'quiz.html';
 });

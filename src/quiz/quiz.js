@@ -1,3 +1,5 @@
+import statusBar from '../functions/status-bar.js';
+
 const quiz = document.getElementById('quiz');
 
 quiz.addEventListener('submit', function(event) {
@@ -7,7 +9,6 @@ quiz.addEventListener('submit', function(event) {
 
     const quizData = {
         job: formData.get('job')
-    
     };
 
     let json = window.localStorage.getItem('user');
@@ -17,7 +18,6 @@ quiz.addEventListener('submit', function(event) {
 
     json = JSON.stringify(user);
     window.localStorage.setItem('user', json);
-
-
-    console.log(user);
 });
+
+statusBar();
