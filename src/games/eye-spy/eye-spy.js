@@ -5,6 +5,17 @@ const ship = document.getElementById('ship');
 const banana = document.getElementById('banana');
 const puppy = document.getElementById('puppy'); 
 
+const images = [
+    {   
+        id: 'batleth',
+        src: './assets/batleth.jpg',
+        value: true
+    },
+]
+
+
+
+
 let rightGuess = 0;
 let wrongGuess = 0;
 
