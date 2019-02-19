@@ -6,12 +6,12 @@ form.addEventListener('submit', function(event) {
     const formData = new FormData(form);
     
     const user = {
-        name: formData.get('name')
+        name: formData.get('name'),
+        eyeSpy: false
     };
 
     const json = JSON.stringify(user);
     window.localStorage.setItem('user', json);
-
 
     window.location = 'quiz.html';
 });

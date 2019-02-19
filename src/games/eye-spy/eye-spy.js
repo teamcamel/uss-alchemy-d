@@ -1,4 +1,5 @@
 import statusBar from '../../functions/status-bar.js';
+import { getUserJson, setUserJson } from '../../../Utilities/jsonFunction.js';
 
 const ship = document.getElementById('ship');
 const banana = document.getElementById('banana');
@@ -16,10 +17,12 @@ ship.addEventListener('click', function() {
 banana.addEventListener('click', function() {
     wrongGuess += 1;
     console.log('wrong guess', wrongGuess);
+    countPoints(rightGuess, wrongGuess);
 });
 
 puppy.addEventListener('click', function() {
     wrongGuess += 1;
+    countPoints(rightGuess, wrongGuess);
     console.log('wrong guess', wrongGuess);
 });
 
@@ -27,10 +30,19 @@ statusBar();
 
 
 function countPoints(rightGuess, wrongGuess) {
-    if(rightGuess === 3) {
-        console.log('as;ldkfj');
+    if(rightGuess === 1) {
+        window.location = './src/games/eye-spy/win-eye-spy.html';
+        console.log('rightGuess reached 1');
+        let user = getUserJson();
+        user.eyeSpy = true;
+        setUserJson(user);
+        console.log(user);
     }
-};
+    if(wrongGuess === 2) {
+        window.location = './src/games/eye-spy/lose-eye-spy.html';
+        console.log('wrongGuess reached 2');
+    }
+}
 
 
 
