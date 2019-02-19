@@ -1,9 +1,7 @@
 import statusBar from '../../functions/status-bar.js';
 import { getUserJson, setUserJson } from '../../../Utilities/jsonFunction.js';
 
-const ship = document.getElementById('ship');
-const banana = document.getElementById('banana');
-const puppy = document.getElementById('puppy'); 
+const imageField = document.getElementById('image-field');
 
 const images = [
     {   
@@ -11,33 +9,63 @@ const images = [
         src: './assets/batleth.jpg',
         value: true
     },
-]
-
-
-
-
-let rightGuess = 0;
+    {
+        id: 'communicator',
+        src: './assets/communicator.jpg',
+        value: false
+    }
+];
 let wrongGuess = 0;
-
-ship.addEventListener('click', function() {
-    rightGuess += 1;
-    console.log('right guess', rightGuess);
-    countPoints(rightGuess, wrongGuess);
-});
-
-banana.addEventListener('click', function() {
-    wrongGuess += 1;
-    console.log('wrong guess', wrongGuess);
-    countPoints(rightGuess, wrongGuess);
-});
-
-puppy.addEventListener('click', function() {
-    wrongGuess += 1;
-    countPoints(rightGuess, wrongGuess);
-    console.log('wrong guess', wrongGuess);
-});
+let rightGuess = 0;
 
 statusBar();
+
+for(let i = 0; i < images.length; i++) {
+    const imageObject = images[i];
+    const img = document.createElement('img');
+    img.src = imageObject.src;
+    img.classList.add(imageObject.value);
+    img.value = imageObject.value;
+    img.id = imageObject.id;
+    imageField.appendChild(img);
+
+    console.log(img.value);
+    console.log(img.classList.value);
+
+    img.addEventListener('click', function() {
+        if(img.classList.value === 'true') {
+            rightGuess += 1;
+            console.log('right guess', rightGuess);
+            countPoints(rightGuess, wrongGuess);
+        } else {
+            wrongGuess += 1;
+            console.log('wrong guess', wrongGuess);
+            countPoints(rightGuess, wrongGuess);
+        }
+    });
+
+}
+
+
+
+// ship.addEventListener('click', function() {
+//     rightGuess += 1;
+//     console.log('right guess', rightGuess);
+//     countPoints(rightGuess, wrongGuess);
+// });
+
+// banana.addEventListener('click', function() {
+//     wrongGuess += 1;
+//     console.log('wrong guess', wrongGuess);
+//     countPoints(rightGuess, wrongGuess);
+// });
+
+// puppy.addEventListener('click', function() {
+//     wrongGuess += 1;
+//     countPoints(rightGuess, wrongGuess);
+//     console.log('wrong guess', wrongGuess);
+// });
+
 
 
 function countPoints(rightGuess, wrongGuess) {
