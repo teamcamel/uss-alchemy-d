@@ -10,6 +10,7 @@ let wrongGuess = 0;
 ship.addEventListener('click', function() {
     rightGuess += 1;
     console.log('right guess', rightGuess);
+    countPoints(rightGuess, wrongGuess);
 });
 
 banana.addEventListener('click', function() {
@@ -24,10 +25,14 @@ puppy.addEventListener('click', function() {
 
 statusBar();
 
-if(ship.value === true) {
-    rightGuess += 1;
-    console.log('right guess', rightGuess);
-}
+
+function countPoints(rightGuess, wrongGuess) {
+    if(rightGuess === 3) {
+        console.log('as;ldkfj');
+    }
+};
+
+
 
 
 
