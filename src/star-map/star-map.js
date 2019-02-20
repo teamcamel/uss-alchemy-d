@@ -3,11 +3,9 @@ import { getUserJson, setUserJson } from '../../../Utilities/jsonFunction.js';
 
 const imageMap = document.getElementById('image-map');
 const user = getUserJson();
-console.log('userJson', getUserJson());
 
-const trueFalse = true;
-
-if(trueFalse === true) {
+console.log(user.eyeSpy);
+if(user.eyeSpy === true) {
     const planetTwo = document.createElement('area');
     planetTwo.id = 'tribbles';
     planetTwo.target = '_self';
@@ -17,8 +15,6 @@ if(trueFalse === true) {
     planetTwo.coords = '359,420,93';
     planetTwo.shape = 'circle';
 
-    console.log('image map', imageMap);
-    console.log('planet Two', planetTwo);
     imageMap.appendChild(planetTwo);
 
 
