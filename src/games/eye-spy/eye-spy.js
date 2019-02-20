@@ -1,5 +1,5 @@
 import statusBar from '../../functions/status-bar.js';
-import { getUserJson, setUserJson } from '../../../Utilities/jsonFunction.js';
+import { getUserJson, setUserJson } from '../../functions/jsonFunction.js';
 
 const imageField = document.getElementById('image-field');
 

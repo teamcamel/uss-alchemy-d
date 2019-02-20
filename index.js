@@ -7,6 +7,7 @@ form.addEventListener('submit', function(event) {
     
     const user = {
         name: formData.get('name'),
+        job: null,
         eyeSpy: false
     };
 
