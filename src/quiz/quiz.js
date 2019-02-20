@@ -1,4 +1,5 @@
 import statusBar from '../functions/status-bar.js';
+import quizResult from '../quiz/results-calculate/quiz-result.js';
 
 const quiz = document.getElementById('quiz');
 
@@ -6,20 +7,27 @@ quiz.addEventListener('submit', function(event) {
     event.preventDefault();
 
     const formData = new FormData(quiz);
-
-    const quizData = {
-        job: formData.get('job')
+    const answers = {
+        interest: formData.get('interest'),
+        quote: formData.get('quote'),
+        bestQuality: formData.get('best-quality'),
+        unknownPlanet: formData.get('unknown-planet'),
+        shipTime: formData.get('ship-time')
     };
+
+    const result = quizResult(answers);
+
+    console.log(result);
 
     let json = window.localStorage.getItem('user');
     const user = JSON.parse(json);
 
-    user.quiz = quizData;
+    user.quiz = answers;
 
     json = JSON.stringify(user);
     window.localStorage.setItem('user', json);
 
-    window.location = 'star-map.html';
+    window.location = '../star-map.html';
 });
 
 statusBar();

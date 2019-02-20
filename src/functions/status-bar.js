@@ -10,7 +10,7 @@ function statusBar() {
     userName.textContent = 'Name: ' + user.name;
     userStatus.appendChild(userName);
 
-    userJob.textContent = 'Job: ' + user.quiz.job;
+    userJob.textContent = 'Job: ' + user.quiz.job; //change to result from quiz..not sure how
     userStatus.appendChild(userJob);
 }
 
