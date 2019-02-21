@@ -1,4 +1,28 @@
+// import makeModal from '../../functions/modal.js';
+
 const play = document.getElementById('play');  //play button
+
+// can this modal section all go into a function?
+const modal = document.querySelector('.modal');
+// const trigger = document.querySelector('.trigger');
+const closeButton = document.querySelector('.close-button');
+
+function toggleModal() {
+    modal.classList.toggle('show-modal');
+}
+
+function windowOnClick(event) {
+    if(event.target === modal) {
+        toggleModal();
+    }
+}
+
+// trigger.addEventListener('click', toggleModal);
+closeButton.addEventListener('click', toggleModal);
+window.addEventListener('click', windowOnClick);
+
+toggleModal();
+// makeModal();
 
 const tribbles = [];
 let placeTribbles;
@@ -33,5 +57,4 @@ function randomPlaceImg() {
     });
 
     document.body.appendChild(tribble);
-    
 }

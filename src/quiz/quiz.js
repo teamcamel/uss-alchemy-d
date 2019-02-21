@@ -1,7 +1,10 @@
 import statusBar from '../functions/status-bar.js';
 import quizResult from '../quiz/results-calculate/quiz-result.js';
+import makeModal from '../functions/modal.js';
 
 const quiz = document.getElementById('quiz');
+
+makeModal();
 
 quiz.addEventListener('submit', function(event) {
     event.preventDefault();

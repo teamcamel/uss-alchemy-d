@@ -1,16 +1,4 @@
-body {
-    background-image: url(../../../assets/tribble-bg-no-avatar.png);
-    background-repeat: no-repeat;
-}
 
-.hidden {
-    display: none;
-}
-
-div {
-    position: absolute;
-}
-/* 
 .modal {
     position: fixed;
     left: 0;
@@ -54,4 +42,4 @@ div {
     visibility: visible;
     transform: scale(1.0);
     transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
-} */
+}
