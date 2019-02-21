@@ -5,3 +5,28 @@
 img {
     display: block;
 }
+.map-div {
+    position: relative;
+    width: 900px;
+    height: 580px;
+    /* border: 1px solid yellow; */
+    background-color: #484a47;
+    padding-left: 30px;
+}
+
+#star-map-image {
+    position: absolute;
+    bottom: 0;
+}
+
+.dash-div {
+    width: 900px;
+    font-size: 0;
+    padding-left: 30px;
+    background-color: #484a47;
+}
+
+.dash {
+    display: inline-block;
+    font-size: 0;
+}
