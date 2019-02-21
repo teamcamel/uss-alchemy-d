@@ -15,14 +15,13 @@ function randomPlaceImg() {
     tribbles.push(tribble);
     
     let randomx = Math.floor(Math.random() * Math.floor(500) + 1);
-    // console.log('randomx', randomx);
     let randomy = Math.floor(Math.random() * Math.floor(305) + 1);
-    // console.log('randomy', randomy);
     tribble.style.top = randomx + 'px';
     tribble.style.left = randomy + 'px';
     
-    if(tribbles.length === 5) {
+    if(tribbles.length === 25) {
         clearInterval(placeTribbles);
+        window.location = '../../star-map.html';
         console.log('lose');
     }
 
@@ -31,7 +30,6 @@ function randomPlaceImg() {
             tribble.classList.add('hidden');
             tribbles.pop();
         }
-        window.location = './star-map.html';
     });
 
     document.body.appendChild(tribble);
