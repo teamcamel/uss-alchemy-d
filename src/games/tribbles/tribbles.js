@@ -2,8 +2,8 @@
 
 const play = document.getElementById('play');  //play button
 const audioTribble = document.getElementById('audio-tribble');
-const tribbleBG = document.getElementById('tribblebg');
 const bgDiv = document.getElementById('background-div');
+
 // const modal = document.querySelector('.modal');
 // const closeButton = document.querySelector('.close-button');
 
