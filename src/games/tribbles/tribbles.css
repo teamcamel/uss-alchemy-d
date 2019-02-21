@@ -1,6 +1,21 @@
-body {
-    background-image: url(../../../assets/tribble-bg-no-avatar.png);
-    background-repeat: no-repeat;
+/* img {
+    display: block;
+} */
+
+#background-div {
+    width: 700px;
+    height: 550px;
+    background-image: url("../../../assets/tribble-bg-no-avatar.png");
+    position: relative;
+}
+
+/* #tribblebg {
+    width: 700px;
+    position: relative;
+    z-index: -5; */
+/* } */
+#theimage {
+    position: absolute;
 }
 
 .hidden {

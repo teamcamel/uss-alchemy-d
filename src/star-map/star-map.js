@@ -16,29 +16,27 @@ if(user.eyeSpy === true) {
     planetTwo.shape = 'circle';
 
     imageMap.appendChild(planetTwo);
-
-
 }
 
 statusBar();
 
-const modal = document.querySelector('.modal');
+// const modal = document.querySelector('.modal');
 // const trigger = document.querySelector('.trigger');
-const closeButton = document.querySelector('.close-button');
+// const closeButton = document.querySelector('.close-button');
 
-function toggleModal() {
-    modal.classList.toggle('show-modal');
-}
+// function toggleModal() {
+//     modal.classList.toggle('show-modal');
+// }
 
-function windowOnClick(event) {
-    if(event.target === modal) {
-        toggleModal();
-    }
-}
+// function windowOnClick(event) {
+//     if(event.target === modal) {
+//         toggleModal();
+//     }
+// }
 
 // trigger.addEventListener('click', toggleModal);
-closeButton.addEventListener('click', toggleModal);
-window.addEventListener('click', windowOnClick);
+// closeButton.addEventListener('click', toggleModal);
+// window.addEventListener('click', windowOnClick);
 
-toggleModal();
+// toggleModal();
 // makeModal();

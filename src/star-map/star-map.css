@@ -2,6 +2,6 @@
     display: none;
 }
 
-/* area {
-    width: 150px;
-} */
+img {
+    display: block;
+}
