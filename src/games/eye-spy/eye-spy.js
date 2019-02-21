@@ -92,8 +92,8 @@ for(let i = 0; i < images.length; i++) {
             img.classList.add('hidden');
         } else {
             wrongGuess += 1;
+            audioWrong.volume = 1.0;
             audioWrong.play();
-            // console.log('wrong guess', wrongGuess);
             countPoints(rightGuess, wrongGuess);
             img.classList.add('hidden');
         }
@@ -117,7 +117,3 @@ function countPoints(rightGuess, wrongGuess) {
         window.location = './src/games/eye-spy/lose-eye-spy.html';
     }
 }
-
-function playAudio() {
-
-} 

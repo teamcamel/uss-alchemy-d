@@ -9,17 +9,27 @@
     <title>Tribbles</title>
 </head>
 <body>
+    <header>
+        <h1>Welcome to tribbleTribble. Don't let them take over, lest you suffocate. Be careful!</h1>
+        <h2>Target the most recently arrived tribble ... before it's too late!</h2>
+        <button id="play">Play!</button>
+    </header>
 <!-- <body> -->
-    <button id="play">Play!</button>
 
     <!-- <button class="trigger">Trigger Modal</button> -->
-    <div class="modal">
+    <!-- <div class="modal">
         <div class="modal-content">
             <span class="close-button">&times;</span>
             <h1>Planet Modal</h1>
         </div>
-    </div>   
+    </div>    -->
+    <div id="background-div"></div>
+    
+    <img src="assets/dashboard.gif" alt="dashboard">
 
+    <audio id="audio-tribble">
+        <source src="assets/audio/tribble-pop.mp3">
+    </audio>
     <script type="module" src="./src/games/tribbles/tribbles.js"></script>
 </body>
 </html>
