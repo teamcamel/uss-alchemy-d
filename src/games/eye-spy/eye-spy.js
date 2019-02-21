@@ -2,6 +2,10 @@ import statusBar from '../../functions/status-bar.js';
 import { getUserJson, setUserJson } from '../../functions/jsonFunction.js';
 
 const imageField = document.getElementById('image-field');
+const counterRight = document.getElementById('counter-right');
+const counterWrong = document.getElementById('counter-wrong');
+const audioCorrect = document.getElementById('audio-correct');
+const audioWrong = document.getElementById('audio-wrong');
 
 const images = [
     {   
@@ -80,23 +84,25 @@ for(let i = 0; i < images.length; i++) {
     img.id = imageObject.id;
     imageField.appendChild(img);
 
-    console.log(img.value);
-    console.log(img.classList.value);
-
     img.addEventListener('click', function() {
         if(img.classList.value === 'true') {
             rightGuess += 1;
-            console.log('right guess', rightGuess);
+            audioCorrect.play();
             countPoints(rightGuess, wrongGuess);
             img.classList.add('hidden');
-            // img.removeEventListener('click', addEventListener)
         } else {
             wrongGuess += 1;
-            console.log('wrong guess', wrongGuess);
+            audioWrong.play();
+            // console.log('wrong guess', wrongGuess);
             countPoints(rightGuess, wrongGuess);
+            img.classList.add('hidden');
         }
+        counterRight.textContent = 'Right Guesses: ' + rightGuess;
+        counterWrong.textContent = 'Wrong Guesses: ' + wrongGuess;
     });
 }
+
+
 
 function countPoints(rightGuess, wrongGuess) {
     if(rightGuess === 4) {
@@ -105,10 +111,13 @@ function countPoints(rightGuess, wrongGuess) {
         let user = getUserJson();
         user.eyeSpy = true;
         setUserJson(user);
-        console.log(user);
     }
+
     if(wrongGuess === 3) {
         window.location = './src/games/eye-spy/lose-eye-spy.html';
-        console.log('wrongGuess reached 3');
     }
 }
+
+function playAudio() {
+
+} 

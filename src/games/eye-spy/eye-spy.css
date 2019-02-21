@@ -6,6 +6,41 @@ img {
     margin: 10px;
 }
 
+img {
+    padding: 15px 25px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: steelblue;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+  }
+  
+  img:hover {background-color: darkgrey}
+  
+  .false:active {
+    background-color: red;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
+  .true:active {
+    background-color:green;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
+
+
+
+
+
+
+
+
 .hidden {
     display: none;
     border: 5px solid purple;
