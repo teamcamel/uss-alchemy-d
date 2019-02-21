@@ -1,15 +1,3 @@
-body {
-    background-image: url(../../../assets/tribble-bg-no-avatar.png);
-    background-repeat: no-repeat;
-}
-
-.hidden {
-    display: none;
-}
-
-div {
-    position: absolute;
-}
 
 .modal {
     position: fixed;
