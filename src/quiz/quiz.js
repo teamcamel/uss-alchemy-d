@@ -30,7 +30,7 @@ quiz.addEventListener('submit', function(event) {
     json = JSON.stringify(user);
     window.localStorage.setItem('user', json);
 
-    window.location = 'star-map.html';
+    window.location = '../quiz-results.html';
 });
 
 statusBar();
