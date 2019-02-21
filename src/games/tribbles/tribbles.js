@@ -4,7 +4,7 @@ const play = document.getElementById('play');  //play button
 
 // can this modal section all go into a function?
 const modal = document.querySelector('.modal');
-const trigger = document.querySelector('.trigger');
+// const trigger = document.querySelector('.trigger');
 const closeButton = document.querySelector('.close-button');
 
 function toggleModal() {

@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="main.css">
     <link rel="stylesheet" type="text/css" href="./src/star-map/star-map.css">
+    <link rel="stylesheet" href="./src/functions/modal.css">
 
     <title>Star Map</title>
 </head>
@@ -16,6 +17,15 @@
     </header>
 
     <main>
+
+<!-- <button class="trigger">Trigger Modal</button> -->
+    <div class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <p>Mission Accomplished! You must now go where no one has gone before.</p>
+        </div>
+    </div>   
+
         <img src="./assets/planets.jpg" usemap="#image-map" id="star-map-image" alt="star map of planets">
         
         <map name="image-map" id="image-map">
