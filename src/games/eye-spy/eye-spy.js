@@ -88,6 +88,8 @@ for(let i = 0; i < images.length; i++) {
             rightGuess += 1;
             console.log('right guess', rightGuess);
             countPoints(rightGuess, wrongGuess);
+            img.classList.add('hidden');
+            // img.removeEventListener('click', addEventListener)
         } else {
             wrongGuess += 1;
             console.log('wrong guess', wrongGuess);

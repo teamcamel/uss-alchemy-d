@@ -6,6 +6,11 @@ img {
     margin: 10px;
 }
 
+.hidden {
+    display: none;
+    border: 5px solid purple;
+}
+
 #image-field {
     display: grid;
     grid-template-columns: 33% 33% 33%;
