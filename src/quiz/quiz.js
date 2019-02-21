@@ -17,12 +17,12 @@ quiz.addEventListener('submit', function(event) {
 
     const result = quizResult(answers);
 
-    console.log(result);
+    console.log('result', result);
 
     let json = window.localStorage.getItem('user');
     const user = JSON.parse(json);
 
-    user.quiz = answers;
+    user.job = result;
 
     json = JSON.stringify(user);
     window.localStorage.setItem('user', json);
