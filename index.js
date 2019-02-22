@@ -9,6 +9,7 @@ form.addEventListener('submit', function(event) {
         name: formData.get('name'),
         job: null,
         eyeSpy: false,
+        tribbles: false,
         avatar: null
     };
 

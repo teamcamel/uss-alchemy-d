@@ -53,7 +53,9 @@ img {
     font-size: 0;
 }
 #avatar-box {
+    margin-top: 120px;
     width: 200px;
+    height: 200px;
 }
 #avatar {
     margin: auto;

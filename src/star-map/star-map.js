@@ -1,11 +1,10 @@
 import statusBar from '../functions/status-bar.js';
-import { getUserJson, setUserJson } from '../functions/jsonFunction.js';
+import { getUserJson } from '../functions/jsonFunction.js';
 
 const imageMap = document.getElementById('image-map');
 const user = getUserJson();
 const avatarImage = document.getElementById('avatar');
 
-console.log(user.eyeSpy);
 if(user.eyeSpy === true) {
     const planetTwo = document.createElement('area');
     planetTwo.id = 'tribbles';
@@ -18,34 +17,19 @@ if(user.eyeSpy === true) {
 
     imageMap.appendChild(planetTwo);
 }
+if(user.tribbles === true) {
+    const planetThree = document.createElement('area');
+    planetThree.id = 'Earth';
+    planetThree.target = '_self';
+    planetThree.alt = 'Earth';
+    planetThree.title = 'Earth';
+    planetThree.href = 'final.html';
+    planetThree.coords = '573,144,97';
+    planetThree.shape = 'circle';
+
+    imageMap.appendChild(planetThree);
+}
 
 statusBar();
-
 let avatar = './assets/avatars/' + user.avatar;
-
 avatarImage.src = avatar;
-
-
-
-
-
-// const modal = document.querySelector('.modal');
-// const trigger = document.querySelector('.trigger');
-// const closeButton = document.querySelector('.close-button');
-
-// function toggleModal() {
-//     modal.classList.toggle('show-modal');
-// }
-
-// function windowOnClick(event) {
-//     if(event.target === modal) {
-//         toggleModal();
-//     }
-// }
-
-// trigger.addEventListener('click', toggleModal);
-// closeButton.addEventListener('click', toggleModal);
-// window.addEventListener('click', windowOnClick);
-
-// toggleModal();
-// makeModal();

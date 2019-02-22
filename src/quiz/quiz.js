@@ -1,10 +1,7 @@
 import statusBar from '../functions/status-bar.js';
 import quizResult from '../quiz/results-calculate/quiz-result.js';
-import makeModal from '../functions/modal.js';
 
 const quiz = document.getElementById('quiz');
-
-makeModal();
 
 quiz.addEventListener('submit', function(event) {
     event.preventDefault();
@@ -19,8 +16,6 @@ quiz.addEventListener('submit', function(event) {
     };
 
     const result = quizResult(answers);
-
-    console.log('result', result);
 
     let json = window.localStorage.getItem('user');
     const user = JSON.parse(json);

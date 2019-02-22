@@ -1,4 +1,3 @@
-
 import statusBar from '../functions/status-bar.js';
 import { getUserJson } from '../functions/jsonFunction.js';
 
@@ -7,8 +6,5 @@ const userStatus = document.getElementById('user-status');
 
 userStatus.textContent = user.name;
 
-console.log('hi');
-
 statusBar();
 
-// const avatar = "./assets/"
