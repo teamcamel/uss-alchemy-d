@@ -66,7 +66,7 @@ function randomPlaceImg() {
     }
     if(counter === 0) {
         clearInterval(placeTribbles);
-        // window.location = '../..
+        window.location = './tribbles-win.html';
     }
 
 
