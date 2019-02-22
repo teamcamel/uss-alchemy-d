@@ -1,10 +1,8 @@
-import statusBar from '../functions/status-bar.js';
 import { getUserJson } from '../functions/jsonFunction.js';
 
-let user = getUserJson();
-const userStatus = document.getElementById('user-status');
+const name = document.getElementById('name');
+const position = document.getElementById('position');
+const user = getUserJson();
 
-userStatus.textContent = user.name;
-
-statusBar();
-
+name.textContent = user.name;
+position.textContent = user.job;

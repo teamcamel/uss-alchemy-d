@@ -3,21 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./main.css">
-    <title>Quiz Results</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <title>Exam Results</title>
 </head>
 <body>
     <header>
-        <h1>
-            Your New Job!
-        </h1>
+        <h1>Final Exam Results</h1>
     </header>
     <main>
-        <span id="user-status"></span>
-        <img src="" alt="user avatar" id="avatar">
-        <button onclick="location.href ='star-map.html';" id="starmap">Star Map!</button>
+        <h2>Congratulations <span id="name"></span>! You have graduated from Starfleet Academy. Your assigned position is: <span id="position"></span>.</h2>
+        <h3>Your first mission aboard the USS Alchemy-D is about to begin.</h3>
+        <img src="assets/enterprise.png" alt="the starship USS Alchemy-D" id="alchemy-pic">
+        <br>
+        <button onclick="location.href ='star-map.html';" id="starmap">Onward!</button>
     </main>
-    <footer></footer>
-    <script src="./src/quiz/quiz-results.js"></script>
+    <script type="module" src="src/quiz/quiz-results.js"></script>
 </body>
 </html>
