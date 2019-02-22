@@ -1,3 +1,16 @@
 fieldset {
-    width: 500px;
+    width: 900px;
+    margin-bottom: 20px;
+}
+
+legend {
+    font-size: 22px;
+    color: yellow;
+}
+label {
+    font-size: 19px;
+}
+
+input {
+    margin: 7px;
 }

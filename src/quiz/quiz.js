@@ -44,5 +44,3 @@ quiz.addEventListener('submit', function(event) {
 
     window.location = 'quiz-results.html';
 });
-
-statusBar();
