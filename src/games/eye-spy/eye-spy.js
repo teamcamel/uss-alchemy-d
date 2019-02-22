@@ -113,13 +113,13 @@ for(let i = 0; i < images.length; i++) {
 
 function countPoints(rightGuess, wrongGuess) {
     if(rightGuess === 4) {
-        window.location = '/win-eye-spy.html';
+        window.location = './win-eye-spy.html';
         console.log('rightGuess reached 4');
         user.eyeSpy = true;
         setUserJson(user);
     }
 
     if(wrongGuess === 3) {
-        window.location = '/lose-eye-spy.html';
+        window.location = './lose-eye-spy.html';
     }
 }
