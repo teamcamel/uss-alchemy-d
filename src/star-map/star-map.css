@@ -1,5 +1,9 @@
-#tribbles {
-    display: none;
+main {
+    cursor: url('../../assets/cursor.png'), auto;
+}
+
+area {
+    cursor: url('../../assets/cursor.png'), auto;
 }
 
 img {
