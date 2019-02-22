@@ -89,8 +89,10 @@ for(let i = 0; i < images.length; i++) {
     img.id = imageObject.id;
     imageField.appendChild(img);
 
+    console.log(img);
+
     img.addEventListener('click', function() {
-        if(img.classList.value === 'true') {
+        if(img.classList.value === 'true tile') {
             rightGuess += 1;
             audioCorrect.play();
             countPoints(rightGuess, wrongGuess);
@@ -111,13 +113,13 @@ for(let i = 0; i < images.length; i++) {
 
 function countPoints(rightGuess, wrongGuess) {
     if(rightGuess === 4) {
-        window.location = './src/games/eye-spy/win-eye-spy.html';
+        window.location = '/win-eye-spy.html';
         console.log('rightGuess reached 4');
         user.eyeSpy = true;
         setUserJson(user);
     }
 
     if(wrongGuess === 3) {
-        window.location = './src/games/eye-spy/lose-eye-spy.html';
+        window.location = '/lose-eye-spy.html';
     }
 }

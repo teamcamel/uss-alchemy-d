@@ -1,7 +1,0 @@
-- text
-- remove modal
-- redirect tribbles on win
--make play button dissapear tribbles
-
--style tribbles
-- fix noise
