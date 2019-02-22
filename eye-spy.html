@@ -9,7 +9,6 @@
 </head>
 <body>
     <header>
-        <div id="user-status"></div>
         <h1>Eye-Spy</h1>
         <h2>The Alchemy-D has passed through a wormhole and parallel universes have overlapped! Click to help Geordi sort out which items belong in this universe.</h2>
     </header>
@@ -19,7 +18,18 @@
     <br>
         <span id="counter-wrong"></span>
         
-        <span id="image-field"></span>
+        <div class="map-div">
+            <span id="image-field"></span>
+                <div id="sidebar">
+                    <div id="user-status"></div>
+                    <div id="avatar-box"><img src="" alt="user avatar" id="avatar"></div>
+                </div>
+            </div>
+            
+            <div class="dash-div">
+                <img src="./assets/dashboard.gif" class="dash">
+                <img src="./assets/trek-logo.png" class="dash" alt="">
+            </div>
 
         <audio id="audio-correct">
             <source src="assets/audio/glass_ping-Go445-1207030150.mp3">

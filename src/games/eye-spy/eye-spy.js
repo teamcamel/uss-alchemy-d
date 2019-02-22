@@ -2,6 +2,8 @@ import statusBar from '../../functions/status-bar.js';
 import { getUserJson, setUserJson } from '../../functions/jsonFunction.js';
 
 const imageField = document.getElementById('image-field');
+const avatarImage = document.getElementById('avatar');
+let user = getUserJson();
 const counterRight = document.getElementById('counter-right');
 const counterWrong = document.getElementById('counter-wrong');
 const audioCorrect = document.getElementById('audio-correct');
@@ -74,12 +76,15 @@ let wrongGuess = 0;
 let rightGuess = 0;
 
 statusBar();
+let avatar = './assets/avatars/' + user.avatar;
+avatarImage.src = avatar;
 
 for(let i = 0; i < images.length; i++) {
     const imageObject = images[i];
     const img = document.createElement('img');
     img.src = imageObject.src;
     img.classList.add(imageObject.value);
+    img.classList.add('tile');
     img.value = imageObject.value;
     img.id = imageObject.id;
     imageField.appendChild(img);
@@ -108,7 +113,6 @@ function countPoints(rightGuess, wrongGuess) {
     if(rightGuess === 4) {
         window.location = './src/games/eye-spy/win-eye-spy.html';
         console.log('rightGuess reached 4');
-        let user = getUserJson();
         user.eyeSpy = true;
         setUserJson(user);
     }

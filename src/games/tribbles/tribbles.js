@@ -1,9 +1,15 @@
 // import makeModal from '../../functions/modal.js';
 
+import statusBar from '../../functions/status-bar.js';
+import { getUserJson } from '../../functions/jsonFunction.js';
+
 const play = document.getElementById('play');  //play button
 const audioTribble = document.getElementById('audio-tribble');
 const bgDiv = document.getElementById('background-div');
 const countdown = document.getElementById('countdown');
+
+const user = getUserJson();
+const avatarImage = document.getElementById('avatar');
 // const modal = document.querySelector('.modal');
 // const closeButton = document.querySelector('.close-button');
 
@@ -21,6 +27,12 @@ const countdown = document.getElementById('countdown');
 // window.addEventListener('click', windowOnClick);
 
 // toggleModal();
+
+statusBar();
+
+let avatar = './assets/avatars/' + user.avatar;
+
+avatarImage.src = avatar;
 
 const tribbles = [];
 let placeTribbles;

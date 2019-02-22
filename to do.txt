@@ -1,0 +1,8 @@
+- text
+- remove modal
+- redirect you lose trible try again button
+- redirect tribbles on win
+-make play button dissapear tribbles
+
+-style eye-spy
+-style tribbles

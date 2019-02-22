@@ -1,13 +1,14 @@
-img {
+.tile {
     display: inline-block;
-    width: 20vw;
+    width: 140px;
+    height: 140px;
     border: 1px solid black;
     border-radius: 50px;
-    margin: 10px;
+    /* margin: 10px; */
 }
 
-img {
-    padding: 15px 25px;
+.tile {
+    padding: 10px 15px;
     font-size: 24px;
     text-align: center;
     cursor: pointer;
@@ -40,10 +41,14 @@ img {
 
 #image-field {
     display: grid;
-    grid-template-columns: 33% 33% 33%;
-    grid-template-rows: 25% 25% 25% 25%;
-    grid-column-gap: 10px;
-    grid-row-gap: 2vh;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 33% 33% 33%;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    width: 700px;
+    height: 550px;
+    position: absolute;
+    bottom: 0;
 }
 
 #batleth {
@@ -51,3 +56,41 @@ img {
     grid-row: 3;
 }
 
+.map-div {
+  position: relative;
+  width: 900px;
+  height: 580px;
+  background-color: #484a47;
+  padding-left: 30px;
+}
+
+#sidebar {
+  width: 200px;
+  height: 550px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  font-size: 24px;
+}
+
+#user-status {
+  height: 110px;
+}
+
+.dash-div {
+  width: 900px;
+  font-size: 0;
+  padding-left: 30px;
+  background-color: #484a47;
+}
+
+.dash {
+  display: inline-block;
+  font-size: 0;
+}
+
+#avatar {
+  margin: auto;
+  padding-top: 20px;
+  

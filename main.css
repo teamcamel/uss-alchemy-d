@@ -3,3 +3,26 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     color: white;   
 }
+
+button {
+    background-color:#4ba3c3;
+    -moz-border-radius:28px;
+    -webkit-border-radius:28px;
+    border-radius:28px;
+    border:1px solid #175676;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:17px;
+    padding:16px 31px;
+    text-decoration:none;
+}
+
+button:hover {
+    background-color:#BA324F;
+}
+button:active {
+    position:relative;
+    top:1px;
+}

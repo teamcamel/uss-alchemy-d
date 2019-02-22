@@ -2,12 +2,10 @@
     width: 700px;
     height: 550px;
     background-image: url("../../../assets/tribble-bg-no-avatar.png");
-    position: relative;
+    position: absolute;
+    bottom: 0;
 }
 
-#theimage {
-    position: absolute;
-}
 
 .hidden {
     display: none;
@@ -16,3 +14,50 @@
 div {
     position: absolute;
 }
+
+img {
+    display: block;
+}
+.map-div {
+    position: relative;
+    width: 900px;
+    height: 580px;
+    background-color: #484a47;
+    padding-left: 30px;
+}
+
+#sidebar {
+    width: 200px;
+    height: 550px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    font-size: 24px;
+}
+
+#user-status {
+    height: 110px;
+    width: 200px;
+}
+
+.dash-div {
+    width: 900px;
+    font-size: 0;
+    padding-left: 30px;
+    background-color: #484a47;
+}
+
+.dash {
+    display: inline-block;
+    font-size: 0;
+}
+#avatar-box {
+    width: 200px;
+}
+#avatar {
+    margin: auto;
+    padding-top: 20px;
+}
+
+
