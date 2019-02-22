@@ -1,4 +1,3 @@
-import statusBar from '../functions/status-bar.js';
 import quizResult from '../quiz/results-calculate/quiz-result.js';
 
 const quiz = document.getElementById('quiz');

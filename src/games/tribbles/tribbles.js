@@ -17,7 +17,7 @@ avatarImage.src = avatar;
 
 const tribbles = [];
 let placeTribbles;
-let counter = 45;
+let counter = 30;
 
 play.addEventListener('click', function() {
     placeTribbles = setInterval(randomPlaceImg, 1000);
@@ -38,7 +38,7 @@ function randomPlaceImg() {
     counter -= 1;
     countdown.textContent = 'time left: ' + counter;
     
-    if(tribbles.length === 25) {
+    if(tribbles.length === 20) {
         clearInterval(placeTribbles);
         window.location = '/tribbles-lose.html';
     }
