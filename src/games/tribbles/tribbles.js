@@ -49,7 +49,7 @@ function randomPlaceImg() {
     console.log('counter', counter);
     if(tribbles.length === 25) {
         clearInterval(placeTribbles);
-        window.location = '/tribbles-lose.html';
+        window.location = './tribbles-lose.html';
         console.log('lose');
     }
     if(counter === 0) {
