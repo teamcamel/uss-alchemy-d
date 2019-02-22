@@ -4,6 +4,20 @@ import { getUserJson } from '../functions/jsonFunction.js';
 const imageMap = document.getElementById('image-map');
 const user = getUserJson();
 const avatarImage = document.getElementById('avatar');
+const narrative = document.getElementById('narrative');
+
+if(user.eyeSpy === false) {
+    narrative.textContent = 'You have been in deep space for 9 months on your first mission on the Starship USS Alchemy-D. It is time to navigate your way home. Click on the purple planet to begin your journey.';
+}
+
+if(user.eyeSpy === true && user.tribbles === false) {
+    narrative.textContent = 'You successfully escaped the alternate universe overlap and everything is back to normal. Click on the ringed planet to continue your journey home.';
+}
+
+if(user.tribbles === true) {
+    narrative.textContent = 'The tribbles have been eradicated from the USS Alchemy-D and it is time to go home! Click on planet Earth to return to Starfleet Headquarters.';
+}
+
 
 if(user.eyeSpy === true) {
     const planetTwo = document.createElement('area');
@@ -16,6 +30,7 @@ if(user.eyeSpy === true) {
     planetTwo.shape = 'circle';
 
     imageMap.appendChild(planetTwo);
+
 }
 if(user.tribbles === true) {
     const planetThree = document.createElement('area');
