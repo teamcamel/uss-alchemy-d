@@ -6,23 +6,23 @@ function evaluateScorecard(scorecard) {
 
     if(engineer > captain
         && engineer > doctor
-        && engineer > redShirt) {
-        return 'engineer';
+        && engineer >= redShirt) {
+        return 'Engineer';
     }
-    else if(captain > doctor
-        && captain > engineer
-        && captain > redShirt) {
-        return 'captain';
+    else if(captain >= doctor
+        && captain >= engineer
+        && captain >= redShirt) {
+        return 'Captain';
     }
-    else if(doctor > engineer
-        && doctor > captain
+    else if(doctor >= engineer
+        && doctor >= captain
         && doctor > redShirt) {
-        return 'doctor';
+        return 'Doctor';
     }
     else if(redShirt > engineer
         && redShirt > doctor
         && redShirt > captain) {
-        return 'redshirt';
+        return 'Redshirt';
     }
 }
 

@@ -19,6 +19,17 @@ img {
     bottom: 0;
 }
 
+#user-status {
+    border: 1px solid red;
+    width: 200px;
+    height: 550px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    font-size: 24px;
+}
+
 .dash-div {
     width: 900px;
     font-size: 0;
