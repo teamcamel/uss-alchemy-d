@@ -18,7 +18,6 @@ if(user.tribbles === true) {
     narrative.textContent = 'The tribbles have been eradicated from the USS Alchemy-D and it is time to go home! Click on planet Earth to return to Starfleet Headquarters.';
 }
 
-
 if(user.eyeSpy === true) {
     const planetTwo = document.createElement('area');
     planetTwo.id = 'tribbles';
@@ -30,7 +29,6 @@ if(user.eyeSpy === true) {
     planetTwo.shape = 'circle';
 
     imageMap.appendChild(planetTwo);
-
 }
 if(user.tribbles === true) {
     const planetThree = document.createElement('area');
