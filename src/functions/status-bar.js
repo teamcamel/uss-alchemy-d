@@ -13,7 +13,7 @@ function statusBar() {
     if(user.job) {
         userJob.textContent = 'Job: ' + user.job;
         userStatus.appendChild(userJob);
-    }
+    }   
 }
 
 export default statusBar;

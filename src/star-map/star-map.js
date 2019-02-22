@@ -3,6 +3,7 @@ import { getUserJson, setUserJson } from '../functions/jsonFunction.js';
 
 const imageMap = document.getElementById('image-map');
 const user = getUserJson();
+const avatarImage = document.getElementById('avatar');
 
 console.log(user.eyeSpy);
 if(user.eyeSpy === true) {
@@ -19,6 +20,14 @@ if(user.eyeSpy === true) {
 }
 
 statusBar();
+
+let avatar = './assets/avatars/' + user.avatar;
+
+avatarImage.src = avatar;
+
+
+
+
 
 // const modal = document.querySelector('.modal');
 // const trigger = document.querySelector('.trigger');

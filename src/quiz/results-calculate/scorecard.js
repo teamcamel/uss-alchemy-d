@@ -18,11 +18,8 @@ function evaluateScorecard(scorecard) {
         && doctor >= captain
         && doctor > redShirt) {
         return 'Doctor';
-    }
-    else if(redShirt > engineer
-        && redShirt > doctor
-        && redShirt > captain) {
-        return 'Redshirt';
+    } else {
+        return 'Red Shirt';
     }
 }
 

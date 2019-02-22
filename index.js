@@ -8,7 +8,8 @@ form.addEventListener('submit', function(event) {
     const user = {
         name: formData.get('name'),
         job: null,
-        eyeSpy: false
+        eyeSpy: false,
+        avatar: null
     };
 
     const json = JSON.stringify(user);

@@ -27,6 +27,23 @@ quiz.addEventListener('submit', function(event) {
 
     user.job = result;
 
+    let avatar = null;
+
+    if(result === 'Captain') {
+        avatar = 'captain.png';
+    }
+    if(result === 'Engineer') {
+        avatar = 'engineer.png';
+    }
+    if(result === 'Doctor') {
+        avatar = 'doctor.png';
+    }
+    if(result === 'Red Shirt') {
+        avatar = 'redshirt.png';
+    }
+
+    user.avatar = avatar;
+
     json = JSON.stringify(user);
     window.localStorage.setItem('user', json);
 
