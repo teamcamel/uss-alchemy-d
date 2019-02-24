@@ -9,6 +9,9 @@ const counterWrong = document.getElementById('counter-wrong');
 const audioCorrect = document.getElementById('audio-correct');
 const audioWrong = document.getElementById('audio-wrong');
 
+// Separate data and logic whenever possible. This images array
+// would be great in its own file.
+
 const images = [
     {   
         id: 'batleth',
@@ -107,6 +110,8 @@ for(let i = 0; i < images.length; i++) {
     });
 }
 
+// a good opportunity for TDD here. Bugs tend to cluster 
+// around branching logic.
 function countPoints(rightGuess, wrongGuess) {
     if(rightGuess === 4) {
         window.location = '/win-eye-spy.html';

@@ -49,6 +49,13 @@ function randomPlaceImg() {
         setUserJson(user);
     }
 
+    // I love that you named killTribble. I recommend you declare it outside the
+    // event listener and then just have addEventLister consume the 
+    // killTribble function.
+    // This kind of function would be great to drive with tests
+    // I notice you have no tests for this app - try to cover as much of your app
+    // in tests as you can, especially if it has branching conditional logic or
+    // a complex algorithm that's hard to keep straight in your head.
     tribble.addEventListener('click', function killTribble() {
         if(tribble.id === tribbles[tribbles.length - 1].id) {
             tribble.classList.add('hidden');

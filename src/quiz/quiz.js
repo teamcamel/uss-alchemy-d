@@ -13,7 +13,7 @@ quiz.addEventListener('submit', function(event) {
         unknownPlanet: formData.get('unknown-planet'),
         shipTime: formData.get('ship-time')
     };
-
+    
     const result = quizResult(answers);
 
     let json = window.localStorage.getItem('user');
@@ -23,6 +23,8 @@ quiz.addEventListener('submit', function(event) {
 
     let avatar = null;
 
+    // how might you do the conditional logic below on lines 28-39 
+    // dynamically in one or two lines?
     if(result === 'Captain') {
         avatar = 'captain.png';
     }
